@@ -46,9 +46,9 @@ const platformAreas = [
 ]
 
 const plans = [
-  { name: 'Basic', price: '100' },
+  { name: 'Basic', price: '89' },
   { name: 'Pro', price: '159' },
-  { name: 'Max', price: '200' },
+  { name: 'Max', price: '199' },
 ]
 
 let observer

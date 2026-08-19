@@ -80,7 +80,11 @@ defineProps({
       <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
     </template>
     <template v-else-if="name === 'spark'">
-      <path d="M12 2c1.4 5.5 4.5 8.6 10 10-5.5 1.4-8.6 4.5-10 10-1.4-5.5-4.5-8.6-10-10 5.5-1.4 8.6-4.5 10-10Z" fill="currentColor" stroke="none" />
+      <g fill="currentColor" stroke="none" transform="translate(1.6 2.26) scale(.04)">
+        <path d="M 539 0.5 L 393.5 302 L 385.5 193 L 13 504.5 L 334 148.5 L 227.5 145 Z" />
+        <path d="M 263 187.5 L 192.5 266 L 1 364.5 L 140.5 262 Z" />
+        <path d="M 363.5 249 L 295 359.5 L 184.5 506 L 285 318.5 Z" />
+      </g>
     </template>
     <template v-else-if="name === 'clock'">
       <circle cx="12" cy="12" r="9" />

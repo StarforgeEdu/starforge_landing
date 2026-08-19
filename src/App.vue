@@ -484,7 +484,7 @@ onBeforeUnmount(() => {
 
     <footer class="site-footer">
       <div class="section-shell site-footer__layout">
-        <a href="#top" aria-label="Back to Starforge home"><BrandMark /></a>
+        <a href="#top" aria-label="Back to Starforge home"><BrandMark tone="reverse" /></a>
         <p>Technology built for the people shaping tomorrow.</p>
         <span>© {{ currentYear }} Starforge</span>
       </div>

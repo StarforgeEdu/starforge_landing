@@ -157,23 +157,26 @@ ol {
 }
 
 .brand-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: inherit;
+  display: inline-grid;
+  width: 146px;
+  aspect-ratio: 881.577 / 260;
+  place-items: center;
+  line-height: 0;
+  user-select: none;
 }
 
-.brand-mark__spark {
-  width: 26px;
-  height: 26px;
-  fill: currentColor;
+.brand-mark--compact {
+  width: 18px;
+  height: 18px;
+  aspect-ratio: 1;
 }
 
-.brand-mark__word {
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.035em;
+.brand-mark__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .button {
@@ -325,10 +328,6 @@ ol {
   min-height: 44px;
   align-items: center;
   border-radius: 9px;
-}
-
-.site-header__brand .brand-mark__spark {
-  color: var(--sf-terracotta);
 }
 
 .site-header__nav {
@@ -516,12 +515,13 @@ ol {
   pointer-events: none;
 }
 
-.hero__linework svg {
+.hero__linework img {
+  display: block;
   width: 100%;
   height: 100%;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1;
+  object-fit: contain;
+  opacity: 0.16;
+  filter: brightness(0) invert(1);
 }
 
 .hero__copy {
@@ -2144,10 +2144,6 @@ ol {
   justify-self: start;
 }
 
-.site-footer .brand-mark__spark {
-  color: var(--sf-saffron);
-}
-
 .site-footer p {
   color: #bfb3a3;
   font-size: 13px;
@@ -2563,16 +2559,12 @@ ol {
   }
 
   .brand-mark {
-    gap: 8px;
+    width: 132px;
   }
 
-  .brand-mark__spark {
-    width: 23px;
-    height: 23px;
-  }
-
-  .brand-mark__word {
-    font-size: 15px;
+  .brand-mark--compact {
+    width: 18px;
+    height: 18px;
   }
 
   .mobile-menu {

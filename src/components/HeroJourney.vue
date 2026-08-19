@@ -1,4 +1,5 @@
 <script setup>
+import BrandMark from './BrandMark.vue'
 import SfIcon from './SfIcon.vue'
 
 const roles = [
@@ -13,11 +14,7 @@ const roles = [
   <section id="top" class="hero" aria-labelledby="hero-title">
     <div class="hero__field">
       <div class="hero__linework" aria-hidden="true">
-        <svg viewBox="0 0 320 320">
-          <path d="M160 8c21 80 67 126 147 147-80 21-126 67-147 147C139 222 93 176 13 155 93 134 139 88 160 8Z" />
-          <circle cx="160" cy="155" r="108" />
-          <path d="M52 47h216M52 263h216M52 47v216M268 47v216" />
-        </svg>
+        <img src="/brand/symbol.svg" alt="" draggable="false" />
       </div>
 
       <div class="hero__copy">
@@ -119,7 +116,7 @@ const roles = [
           <span>•••</span>
         </div>
         <div class="phone-preview__brand">
-          <SfIcon name="spark" :size="16" />
+          <BrandMark compact />
           <strong>My day</strong>
         </div>
         <p>Tuesday, 18 August</p>
